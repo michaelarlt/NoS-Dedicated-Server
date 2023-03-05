@@ -39,7 +39,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: debst/calculate-pi
+          images: ${{ secrets.DOCKER_HUB_USERNAME }}/nosdedicated
           tags: |
             type=semver,pattern={{version}}
       
