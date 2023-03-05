@@ -8,16 +8,16 @@ version: "3.2"
 
 services:
   nos:
-    image: ladyviktoria/noonesurviveddedicated:latest
+    image: f63nnkj4/nosdedicated:latest
     container_name: nos
     restart: "unless-stopped"
     volumes:
-      - /srv/nos-dedicated:/home/steam/nos-dedicated
+      - /opt/nos-dedicated:/home/steam/nos-dedicated
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=1001
+      - PGID=1002
     ports:
-      - 7767:7767/udp
-      - 7768:7768/udp
-      - 27014:27014/udp
+      - 7777:7777/udp
+      - 7778:7778/udp
+      - 27015:27015/udp
 ```
