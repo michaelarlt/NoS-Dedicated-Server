@@ -1,9 +1,9 @@
 ###########################################################
-# Dockerfile that builds a Conan Exiles Gameserver
+# Dockerfile that builds a No one Survived Gameserver
 ###########################################################
 FROM debian:bullseye-slim
 
-LABEL maintainer="bert@lair.be"
+LABEL maintainer="michaelarlt@noreply.github.com"
 
 ################
 # steamcmd     #
@@ -108,4 +108,4 @@ ENV     XVFB=1
 COPY ./startup.sh /root/startup.sh
 ENTRYPOINT ["/root/startup.sh"]
 
-EXPOSE 27014/udp 7767/udp 
+EXPOSE 27015/udp 7777/udp 
