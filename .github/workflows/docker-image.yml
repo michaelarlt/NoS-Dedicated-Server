@@ -40,4 +40,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ladyviktoria/noonesurviveddedicated:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/nosdicated:latest
