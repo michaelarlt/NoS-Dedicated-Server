@@ -91,7 +91,7 @@ VOLUME $STEAMAPPDIR
 # Parameters for the Conan process
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks \
         && chmod +x /usr/sbin/winetricks
-ENV 	NOS_ARGS -log -nosteam -server
+ENV 	NOS_ARGS -USEALLAVAILABLECORES -high -preload -log -server
 ENV     HOME=${STEAMAPPDIR}
 ENV     WINEPREFIX=${STEAMAPPDIR}/.wine
 ENV     WINEDLLOVERRIDES="mscoree,mshtml="
