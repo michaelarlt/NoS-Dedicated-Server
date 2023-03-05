@@ -6,14 +6,15 @@ name: Docker Image CI
 # documentation.
 
 on:
-  schedule:
-    - cron: '5 * * * *'
+  #schedule:
+  #  - cron: '5 * * * *'
   push:
-    branches: [ master ]
+    #branches: [ master ]
     # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ master ]
+    tags:
+      - 'v*.*.*'
+  #pull_request:
+  #  branches: [ master ]
 
 jobs:
   push_to_registries:
