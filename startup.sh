@@ -18,10 +18,10 @@ chown steam:steam -R /home/steam
 
 echo "
 -------------------------------------
-Setting up wine
+Setting up winetricks and wine
 -------------------------------------
 "
-winetricks -q dotnet40 dotnet48 d3dcompiler_47 vcrun2022 allfonts d3dx11_43 dxvk2010 vkd3d dxvk
+winetricks -v --self-update -q dotnet40 dotnet48 d3dcompiler_47 vcrun2022 allfonts d3dx11_43 dxvk2010 vkd3d dxvk
 
 
 
