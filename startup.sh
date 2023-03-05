@@ -21,7 +21,7 @@ echo "
 Setting up wine
 -------------------------------------
 "
-winetricks -q dotnet48 d3dcompiler_47 vcrun2015 allfonts
+winetricks -q dotnet48 d3dcompiler_47 vcrun2022 allfonts
 
 
 
