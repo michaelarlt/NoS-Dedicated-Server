@@ -66,6 +66,7 @@ RUN set -x \
                libwine:i386 \
                fonts-wine \
                winehq-stable \
+	       winetricks \
                xauth \
 	       xvfb \
 	       cabextract \
@@ -88,9 +89,9 @@ WORKDIR $STEAMAPPDIR
 
 VOLUME $STEAMAPPDIR
 
-# Parameters for the Conan process
-RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks \
-        && chmod +x /usr/sbin/winetricks
+# Parameters for the NoS process
+#RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks \
+#        && chmod +x /usr/sbin/winetricks
 ENV 	NOS_ARGS -USEALLAVAILABLECORES -high -preload -log -server
 ENV     HOME=${STEAMAPPDIR}
 ENV     WINEPREFIX=${STEAMAPPDIR}/.wine
