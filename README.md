@@ -9,13 +9,13 @@ version: "3.2"
 services:
   nos:
     image: f63nnkj4/nosdedicated:latest
-    container_name: nos
+    container_name: NoS
     restart: "unless-stopped"
     volumes:
       - /opt/nos-dedicated:/home/steam/nos-dedicated
     environment:
-      - PUID=1001
-      - PGID=1002
+      - PUID=911
+      - PGID=911
     ports:
       - 7777:7777/udp
       - 7778:7778/udp
