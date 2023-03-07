@@ -30,7 +30,7 @@ RUN set -x \
     && su steam -c \
 	  "mkdir -p ${STEAMCMDDIR} \
 		 && cd ${STEAMCMDDIR} \
-So		 && wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar zxf -"
+		 && wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar zxf -"
     
 
 ###################
