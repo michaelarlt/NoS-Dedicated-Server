@@ -8,13 +8,16 @@ name: Docker Image CI
 on:
   #schedule:
   #  - cron: '5 * * * *'
+  
   push:
     #branches: [ master ]
     # Publish semver tags as releases.
     tags:
       - 'v*~.*~.*~'
+  
   release:
     types: [published]
+  
   #pull_request:
   #  branches: [ master ]
 
