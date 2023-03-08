@@ -21,7 +21,7 @@ echo "
 Setting up winetricks and wine
 -------------------------------------
 "
-su steam -c "winetricks -q dotnet20 dotnet48 d3dcompiler_47 vcrun2022"
+su steam -c "winetricks -q dotnet48 d3dcompiler_47 vcrun2022"
 
 
 
