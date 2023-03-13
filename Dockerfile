@@ -65,7 +65,7 @@ RUN set -x \
                libwine \
                libwine:i386 \
                fonts-wine \
-               winehq-staging \
+               winehq-stable \
                xauth \
 	       xvfb \
 	       cabextract \
@@ -94,7 +94,7 @@ RUN	wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks
 ENV 	NOS_ARGS -USEALLAVAILABLECORES -high -preload -log -server
 ENV     HOME=${STEAMAPPDIR}
 ENV     WINEPREFIX=${STEAMAPPDIR}/.wine
-ENV     WINEDLLOVERRIDES="mscoree,mshtml="
+#ENV     WINEDLLOVERRIDES="mscoree,mshtml="
 ENV     DISPLAY=:0
 ENV     DISPLAY_WIDTH=1024
 ENV     DISPLAY_HEIGHT=768
