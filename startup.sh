@@ -21,7 +21,9 @@ echo "
 Setting up winetricks and wine
 -------------------------------------
 "
-su steam -c "winetricks -q dotnet48 d3dcompiler_47 vcrun2022"
+su steam -c "winetricks -q dotnet472"
+su steam -c "winetricks -q d3dcompiler_47"
+su steam -c "winetricks -q vcrun2013"
 
 
 
@@ -60,5 +62,5 @@ Starting server
 -------------------------------------
 "
 #su steam -c  "xvfb-run --auto-servernum --server-args='-screen 0 640x480x24:32' wine ${STEAMAPPDIR}/WRSHServer.exe -log -nosteam -server"
-su steam -c  "xvfb-run --auto-servernum wine64 ${STEAMAPPDIR}/WRSHServer.exe ${NOS_ARGS}"
+su steam -c  "xvfb-run --auto-servernum wine ${STEAMAPPDIR}/WRSHServer.exe ${NOS_ARGS}"
 #su steam -c "wine64 ${STEAMAPPDIR}/WRSHServer.exe ${NOS_ARGS}"
